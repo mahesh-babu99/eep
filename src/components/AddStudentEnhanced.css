@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start for better alignment */
+    min-height: 100vh; /* Changed to min-height for better responsiveness */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+
+.container {
+    width: 80%; /* Increased width for better use of space */
+    background: white;
+    padding: 40px; /* Increased padding for a more spacious feel */
+    border: 2px solid #007bff; /* Changed border color to match theme */
+    border-radius: 10px; /* Slightly increased border radius */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    max-width: 900px; /* Increased max-width for larger screens */
+    text-align: left;
+}
+
+
+h2 {
+    font-size: 2em; /* Increased font size for better visibility */
+    color: #333;
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    border-bottom: 3px solid #007bff; /* Increased border thickness */
+    padding-bottom: 15px; /* Increased padding for better aesthetics */
+}
+
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 14px 24px; /* Increased padding for a more substantial button */
+    border: none;
+    border-radius: 5px; /* Slightly increased border radius */
+    font-size: 1.1em; /* Increased font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+button:hover {
+    transform: scale(1.05); /* Added hover effect for better interaction */
+}
+
+
+/* Specific button styles */
+.Next-btn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.Next-btn:hover {
+    background-color: #0056b3;
+}
+
+.Back-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.Back-btn:hover {
+    background-color: #c82333;
+}
+
+.Previous-btn {
+    background-color: #6c757d; /* Gray */
+    color: white;
+}
+
+.Previous-btn:hover {
+    background-color: #5a6268;
+}
+
+.Submit-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.Submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-group button {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
